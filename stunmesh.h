@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <logging.h>
+
 #include <netinet/in.h>
 
 struct interface;

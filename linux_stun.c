@@ -2,7 +2,7 @@
 
 int linux_stun_get_ip_port(struct interface *iface)
 {
-	puts("Log Linux stun get ip port");
+	LOG("Log Linux stun get ip port\n");
 	return 0;
 }
 

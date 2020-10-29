@@ -9,6 +9,7 @@ set(CMAKE_C_STANDARD 99)
 set(sources
 	stunmesh
 	linux_stun
+	logging
 )
 
 set(STUNMESH stunmesh)

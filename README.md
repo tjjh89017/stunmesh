@@ -11,6 +11,7 @@ interface
 - type (wg, vxlan)
 - listen_port
 - remote_endpoint (current)
+- interface_additional_attributes (keypair in wg)
 - interface_ops (to setup remote endpoint)
 - storage (OpenDHT or other hashtable service to store and get remote endpoint)
     - if need to store encrypted endpoint info, need to setup pre-shared key or use wireguard key pair sealbox

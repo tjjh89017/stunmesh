@@ -43,10 +43,15 @@ struct storage_ops {
 
 struct stun {
 	char *name;
+	int fd;
+	struct sockaddr_in stun_server;
 	struct stun_ops *ops;
 };
 
 struct stun_ops {
+	int (*init)(struct stun *stun);
+	int (*deinit)(struct stun *stun);
+	int (*setup_server)(struct stun *stun, char *ip, unsigned short port);
 	int (*get_ip_port)(struct interface *iface);
 };
 

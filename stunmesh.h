@@ -1,6 +1,8 @@
 #ifndef __STUNMESH_H__
 #define __STUNMESH_H__
 
+#include <stdlib.h>
+#include <stdio.h>
 #include <netinet/in.h>
 
 struct interface;

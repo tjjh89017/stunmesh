@@ -14,12 +14,12 @@ set(sources
 set(STUNMESH stunmesh)
 
 add_executable(${STUNMESH}
-	$(sources)
+	${sources}
 )
 
-target_include_directories($STUNMESH) PUBLIC
+target_include_directories(${STUNMESH} PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
-}
+)
 
 install(TARGETS ${EZIO}
 	RUNTIME DESTINATION bin)

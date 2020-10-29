@@ -10,6 +10,7 @@ interface
 - real network interface (to send VPN)
 - type (wg, vxlan)
 - listen_port
+- local_endpoint (current, real)
 - remote_endpoint (current)
 - interface_additional_attributes (keypair in wg)
 - interface_ops (to setup remote endpoint)
